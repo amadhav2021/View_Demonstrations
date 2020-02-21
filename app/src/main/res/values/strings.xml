@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">View Demonstrations</string>
+    <string name="topleft">Top Left</string>
+    <string name="topright">Top Right</string>
+    <string name="bottomleft">Bottom Left</string>
+    <string name="bottomright">Bottom Right</string>
+    <string name="message">Look at dem views!</string>
+</resources>
