@@ -7,5 +7,8 @@
     <dimen name="width_mid">300dp</dimen>
     <dimen name="height_mid">200dp</dimen>
     <dimen name="height_mid_small">150dp</dimen>
-    <dimen name="width_mid_small">150dp</dimen>>
+    <dimen name="width_mid_small">150dp</dimen>
+    <dimen name="font_size">20dp</dimen>
+    <dimen name="padding">15dp</dimen>
+    <dimen name="font_size_large">64dp</dimen>>
 </resources>

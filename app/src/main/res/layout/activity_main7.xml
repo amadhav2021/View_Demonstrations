@@ -6,28 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
+
+    <TextView
+        android:id="@+id/text"
         android:layout_width="@dimen/width_mid_small"
-        android:layout_height="wrap_content"
-        android:text="@string/button"
+        android:layout_height="@dimen/height_small"
+        android:text="@string/text_view"
+        android:gravity="center"
+        android:textSize="@dimen/font_size"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
-
-    <ScrollView
+    <include
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:padding="@dimen/padding">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/long_text"
-            android:textSize="@dimen/font_size"
-            android:textAlignment="center"/>
-    </ScrollView>
+        layout="@layout/helper_7"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
